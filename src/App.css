@@ -1,0 +1,111 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(166, 186, 252);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.navItem {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 1rem;
+
+}
+
+.navItem:hover {
+  color: blue;
+}
+
+nav h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0 1rem;
+}
+
+/* about */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+
+
+}
+
+.pic {
+  width: 70%;
+  border-radius: 10%;
+}
+
+
+
+/* footer */
+footer div {
+  background-color: rgb(166, 186, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+
+}
+
+footer div a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 1rem;
+}
+footer div a:hover {
+  color: blue;
+}
+
+/* contact */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.form-container {
+  text-align: center;
+  width: 400px;
+}
+
+.contact-container div{
+  margin-top: 20px;
+}
+
+.form-button {
+  background-color: blue;
+  color: whitesmoke;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.form-button:hover {
+  color: whitesmoke;
+  background-color: rgb(74, 74, 255);
+}
