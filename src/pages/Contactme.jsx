@@ -5,16 +5,34 @@ function Contactme(){
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleInputBlur = (event) => {
+    if (!event.target.value) {
+      setErrorMessage(`${event.target.name} is required.`);
+    } else {
+      setErrorMessage("");
+    }
+  };
+
+  const handleEmailBlur = (event) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(event.target.value)) {
+      setErrorMessage("Please enter a valid email address.");
+    } else {
+      setErrorMessage("");
+    }
+  };
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
 
     if (name === "name") {
-        setName(value);
+      setName(value);
     } else if (name === "email") {
-        setEmail(value);
+      setEmail(value);
     } else if (name === "message") {
-        setMessage(value);
+      setMessage(value);
     }
   };
 
@@ -22,12 +40,13 @@ function Contactme(){
     event.preventDefault();
 
     if (!name || !email || !message) {
-        alert("Please fill out all fields");
+      setErrorMessage("Please fill out all fields");
     } else {
-        alert(`Thank you for your message, ${name}!`);
-        setName("");
-        setEmail("");
-        setMessage("");
+      alert(`Thank you for your message, ${name}!`);
+      setName("");
+      setEmail("");
+      setMessage("");
+      setErrorMessage("");
     }
   };
 
@@ -45,6 +64,7 @@ function Contactme(){
               name="name"
               value={name}
               onChange={handleInputChange}
+              onBlur={handleInputBlur}
             />
           </div>
 
@@ -57,6 +77,7 @@ function Contactme(){
               name="email"
               value={email}
               onChange={handleInputChange}
+              onBlur={handleEmailBlur}
             />
           </div>
 
@@ -68,8 +89,11 @@ function Contactme(){
               name="message"
               value={message}
               onChange={handleInputChange}
+              onBlur={handleInputBlur}
             />
           </div>
+
+          {errorMessage && <div className="error-message">{errorMessage}</div>}
 
           <button className='form-button' type="button" onClick={handleFormSubmit}>
               Submit
@@ -80,7 +104,6 @@ function Contactme(){
   )
 
 };
-
 
 export default Contactme;
 
