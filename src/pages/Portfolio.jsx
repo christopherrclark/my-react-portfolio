@@ -7,7 +7,7 @@ const Portfolio = () => {
 
   const projects = [
     {id: 1, name: 'Gamers Haver', image: gamersHavenImg, deployed: 'https://gamers-haven.herokuapp.com/', repo: 'https://github.com/christopherrclark/gaming-blog', techStack: [{name: "Express"}, {name: "MySQL2"}, {name: "Sequelize"}, {name: ""}, {name: "Node"}, {name: "Bootstrap"}, {name: "JavaScript"}
-  ]},
+    ]},
   ]
 
   return (
@@ -15,7 +15,7 @@ const Portfolio = () => {
       {projects.map(project => (
         <div className="project-container" key={project.id}>
           <div className="project-image-container">
-            <a href={project.deployed} target="blank">
+            <a className="project-link" href={project.deployed} target="blank">
               <img className="project-image" src={project.image} alt={project.name}/>
             </a>
           </div>

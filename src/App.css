@@ -99,6 +99,32 @@ nav h1 {
   }
 }
 
+/* portfolio projects page */
+.project-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 30%;
+}
+.project-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+.project-link {
+  display: block;
+  width: 600px;
+}
+
+.project-link img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 /* footer */
 footer div {
   background-color: rgb(166, 186, 252);
