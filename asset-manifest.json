@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/my-react-portfolio/static/css/main.8113e74d.css",
+    "main.js": "/my-react-portfolio/static/js/main.7d549bc7.js",
+    "static/media/me.jpg": "/my-react-portfolio/static/media/me.c22e44d97a7f5b124afb.jpg",
+    "static/media/gamers-haven-screenshot.png": "/my-react-portfolio/static/media/gamers-haven-screenshot.4ba162efbf05976b083e.png",
+    "index.html": "/my-react-portfolio/index.html",
+    "main.8113e74d.css.map": "/my-react-portfolio/static/css/main.8113e74d.css.map",
+    "main.7d549bc7.js.map": "/my-react-portfolio/static/js/main.7d549bc7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8113e74d.css",
+    "static/js/main.7d549bc7.js"
+  ]
+}
