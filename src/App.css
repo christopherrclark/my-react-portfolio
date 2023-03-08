@@ -100,30 +100,106 @@ nav h1 {
 }
 
 /* portfolio projects page */
+.big-project-container {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
 .project-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  width: 30%;
+  margin: 0 auto; 
+  width: 50%;
 }
 .project-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
+  padding: 5% 5%;
   width: 80%;
 }
+
+.project-name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  width: 100;
+}
+
+.project-links {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 200px;
+}
+
 .project-link {
-  display: block;
-  width: 600px;
+  color: rgb(66, 66, 66);
+  font-size: 25;
+  font-style: oblique;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: hotpink;
 }
 
 .project-link img {
   width: 100%;
   object-fit: cover;
+  border: 3px solid rgb(151, 156, 170);
+  box-shadow: 5px 4px rgb(85, 84, 92);
   border-radius: 10px;
 }
+
+.project-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.project-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .big-project-container {
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+
+  .project-container {
+    flex-direction: column;
+    padding: 5% 0;
+  }
+
+  .project-image-container {
+    width: 80%;
+    margin-bottom: 3%;
+  }
+
+  .project-name {
+    font-size: 1.5rem;
+  }
+
+  .project-text {
+    width: 90%;
+  }
+
+  .project-text-container {
+    width: 80%;
+  }
+}
+
+
 
 /* footer */
 footer div {
@@ -211,6 +287,11 @@ footer div a:hover {
 .form-button:hover {
   color: whitesmoke;
   background-color: rgb(74, 74, 255);
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 600px) { /* create a media query for screens smaller than 600px */
