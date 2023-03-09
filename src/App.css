@@ -1,4 +1,4 @@
-
+/* navigation */
 .header {
   display: flex;
   justify-content: space-between;
@@ -52,7 +52,7 @@ nav h1 {
   }
 }
 
-/* about */
+/* about page */
 .about {
   display: flex;
   justify-content: center;
@@ -211,8 +211,6 @@ footer div {
   position: fixed;
   bottom: 0;
   width: 100%;
-
-
 }
 
 footer div a {
@@ -243,7 +241,7 @@ footer div a:hover {
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 .form-container {
@@ -319,7 +317,7 @@ footer div a:hover {
   padding: 0 1rem;
 }
 .resume a:hover {
-  color: rgb(102, 102, 255);
+  color: hotpink;
 }
 
 h3 {

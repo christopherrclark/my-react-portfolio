@@ -1,4 +1,5 @@
 import React from 'react'
+
 import gamersHavenImg from '../images/gamers-haven-screenshot.png'
 import weatherDashboardImg from '../images/weather-dashboard-screenshot.png'
 import guacBottomImg from '../images/guac-bottom-screenshot.png'
@@ -11,35 +12,52 @@ const Portfolio = () => {
 
   const projects = [
     
-    {id: 1, name: 'Guac Bottom', 
+    {
+      id: 1, 
+      name: 'Guac Bottom', 
       image: guacBottomImg, 
       deployed: 'https://odetothecode.github.io/GuacBottom/', 
-      repo: 'https://github.com/OdeToTheCode/GuacBottom'},
+      repo: 'https://github.com/OdeToTheCode/GuacBottom'
+    },
 
-    {id: 2, name: 'Gamers Haven', 
+    {
+      id: 2, 
+      name: 'Gamers Haven', 
       image: gamersHavenImg, 
       deployed: 'https://gamers-haven.herokuapp.com/', 
       repo: 'https://github.com/christopherrclark/gaming-blog'
     },
 
-    {id: 3, name: 'Weather Dashboard', 
+    {
+      id: 3, 
+      name: 'Weather Dashboard', 
       image: weatherDashboardImg, 
       deployed: 'https://christopherrclark.github.io/weather-dashboard/', 
-      repo: 'https://github.com/christopherrclark/weather-dashboard'},
+      repo: 'https://github.com/christopherrclark/weather-dashboard'
+    },
 
-    {id: 4, name: 'Work Day Scheduler', 
+    {
+      id: 4, 
+      name: 'Work Day Scheduler', 
       image: workDaySchedulerImg, deployed: 'https://christopherrclark.github.io/work-day-scheduler/', 
-      repo: 'https://github.com/christopherrclark/work-day-scheduler'},
+      repo: 'https://github.com/christopherrclark/work-day-scheduler'
+    },
 
-    {id: 5, name: 'Note Taker', 
+    {
+      id: 5, 
+      name: 'Note Taker', 
       image: noteTakerImg, 
       deployed: 'https://note-taker-app-two.herokuapp.com/', 
-      repo: 'https://github.com/christopherrclark/note-taker-app-two'},
+      repo: 'https://github.com/christopherrclark/note-taker-app-two'
+    },
 
-    {id: 6, name: 'PWA Text Editor', 
+    {
+      id: 6, 
+      name: 'PWA Text Editor', 
       image: jateImg, 
       deployed: 'https://pwa-text-editor.herokuapp.com/',
-      repo: 'https://github.com/christopherrclark/pwa-text-editor'}
+      repo: 'https://github.com/christopherrclark/pwa-text-editor'
+    }
     
 
   ]
