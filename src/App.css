@@ -116,6 +116,7 @@ nav h1 {
 .big-project-container {
   margin-top: 5%;
   margin-bottom: 10%;
+  padding-bottom: 10%;
 }
 .project-image-container {
   display: flex;
