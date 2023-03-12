@@ -65,16 +65,24 @@ nav h1 {
   align-items: center;
   margin: 100px 0;
   padding-bottom: 100px;
-
-
 }
 
-.about p {
-  width: 60%;
-  font-size: 1.5rem;
+.aboutText p {
+  width: 90%;
+  font-size: 1rem;
   font-weight: 600;
-  margin: 0 20px;
+  margin: 0 20px 20px 0;
 }
+
+.aboutText {
+  padding-bottom: 100px;
+  /* margin-left: 10%; */
+}
+
+/* .about h1 {
+  display: flex;
+  justify-content: center;
+} */
 
 .pic {
   width: 60%;
@@ -90,12 +98,17 @@ nav h1 {
 
   .picContainer {
     margin: 50px 0; /* Reduce the margin */
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 
-  .about p {
-    width: 80%; /* Make the text wider */
-    margin: 20px 0; /* Add some space between the text and the image */
+  .aboutText p {
+    font-size: 0.9rem;
+    margin: 0 10px 10px 10px;
+  }
+    
+    .aboutText {
+    padding-bottom: 50px;
+    /* margin-left: 5%; */
   }
 }
 
